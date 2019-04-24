@@ -1,0 +1,14 @@
+<modification>
+    <name><a href="http://inpromotion.ru" target="_blank" data-toggle="tooltip" data-placement="right" data-original-title="Разработано в InPromotion.Ru"><i class="fa fa-cloud-download" aria-hidden="true" style="margin-right: 5px;"></i>Фиксы для создания новых товаров</a></name>
+	<version>1.0</version>
+	<link>http://inpromotion.ru</link>
+	<author>inpromotion.ru@gmail.com</author>
+	<code>oc23_product_fix</code>
+	<!-- Установка значения поля "Вычитать со склада" в состояние "Нет" при создании новых товаров -->
+	<file path="admin/controller/catalog/product.php">
+		<operation error="skip">
+			<search ><![CDATA[$data['subtract'] = 1;]]></search>
+			<add position="replace"><![CDATA[$data['subtract'] = 0;]]></add>
+		</operation>
+	</file>	
+</modification>
