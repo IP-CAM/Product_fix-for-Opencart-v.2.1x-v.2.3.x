@@ -1,3 +1,4 @@
-# oc21-23_product_fix
+# Opencart v.21-v.23_Product_Fix
 
-Данный модификатор производит установку значения поля "Вычитать со склада" в состояние "Нет" при создании новых товаров в Opencart 2.3, ocStore 2.3 и т.д. (v.1.0.0)
+This modifier sets the value of the "Subtract from warehouse" field to "No" 
+when creating new products in Opencart 2.3, ocStore 2.3, etc. (v.1.0.0) 
